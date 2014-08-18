@@ -1,21 +1,9 @@
-body
+li:nth-child(odd)
 {
-	font-family: sans-serif;
+	background: #eee;
 }
 
-th
+li:hover
 {
-	background: black;
-	color: white;
-}
-
-tbody th
-{
-	text-align: left;
-	background: grey;
-}
-
-tbody td
-{
-	text-align: right;
+	font-weight: bold;
 }

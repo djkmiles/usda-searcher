@@ -7,11 +7,14 @@
 </body>
 
 <template name="search">
-    <h1>USDA Nutrition Database</h1>
-    <input type="text" style="width: 400px; font-size: 2em" placeholder="Search phrase...">
-    <ol>
-    {{#each data}}
-        <li>{{description}}</li>
-    {{/each}}
-    </ol>
+    <div class="container">
+        <h1>USDA Nutrition Database</h1>
+        <input type="text" class="form-control input-lg" placeholder="Search phrase...">
+        <hr>
+        <ol>
+        {{#each data}}
+            <li title="{{#each nutrients}}{{#if isWanted tagname}}{{amountPer100G}}g {{nameOf tagname}}, {{/if}}{{/each}}">{{description}}</li>
+        {{/each}}
+        </ol>
+    </div>
 </template>
