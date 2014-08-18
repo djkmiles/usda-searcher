@@ -1,0 +1,21 @@
+body
+{
+	font-family: sans-serif;
+}
+
+th
+{
+	background: black;
+	color: white;
+}
+
+tbody th
+{
+	text-align: left;
+	background: grey;
+}
+
+tbody td
+{
+	text-align: right;
+}

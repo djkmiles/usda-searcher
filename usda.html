@@ -1,0 +1,17 @@
+<head>
+  <title>usda</title>
+</head>
+
+<body>
+  {{> search}}
+</body>
+
+<template name="search">
+    <h1>USDA Nutrition Database</h1>
+    <input type="text" style="width: 400px; font-size: 2em" placeholder="Search phrase...">
+    <ol>
+    {{#each data}}
+        <li>{{description}}</li>
+    {{/each}}
+    </ol>
+</template>
